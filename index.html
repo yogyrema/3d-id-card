@@ -1,0 +1,240 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Interactive 3D Digital Identity Card"
+    >
+
+    <title>3D Identity Card</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         BACKGROUND
+    ========================================================== -->
+
+    <div class="background-grid"></div>
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+
+    <!-- =========================================================
+         PAGE
+    ========================================================== -->
+
+    <main class="page">
+
+        <!-- Small technical header -->
+
+        <div class="top-label">
+            <span class="status-dot"></span>
+            DIGITAL IDENTITY SYSTEM
+        </div>
+
+
+        <!-- =====================================================
+             IDENTITY CARD
+        ====================================================== -->
+
+        <section
+            class="id-card"
+            id="idCard"
+            aria-label="Digital Identity Card"
+        >
+
+            <!-- -------------------------------------------------
+                 3D LUMA LAYER
+            -------------------------------------------------- -->
+
+            <div class="luma-layer">
+
+                <iframe
+                    src="https://lumalabs.ai/embed/b4e2283c-f4b0-4178-9ade-afa161ecbd7f?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false"
+                    title="3D Person"
+                    frameborder="0"
+                    allow="fullscreen"
+                ></iframe>
+
+            </div>
+
+
+            <!-- -------------------------------------------------
+                 DARK / GLASS GRADIENT
+            -------------------------------------------------- -->
+
+            <div class="visual-overlay"></div>
+
+
+            <!-- -------------------------------------------------
+                 DECORATIVE FRAME
+            -------------------------------------------------- -->
+
+            <div class="card-frame"></div>
+
+
+            <!-- -------------------------------------------------
+                 TOP INFORMATION
+            -------------------------------------------------- -->
+
+            <div class="card-top">
+
+                <div class="institution">
+
+                    <!--
+                        Ganti dengan:
+                        assets/logo.png
+
+                        Jika belum punya logo,
+                        biarkan div ini.
+                    -->
+
+                    <div class="logo-placeholder">
+                        <span>LOGO</span>
+                    </div>
+
+                    <div class="institution-name">
+                        YOUR INSTITUTION
+                    </div>
+
+                </div>
+
+
+                <div class="card-index">
+                    <span>IDENTITY</span>
+                    <strong>03</strong>
+                </div>
+
+            </div>
+
+
+            <!-- -------------------------------------------------
+                 FLOATING TECHNICAL ELEMENT
+            -------------------------------------------------- -->
+
+            <div class="scan-line"></div>
+
+
+            <div class="technical-mark technical-mark-one">
+                01
+            </div>
+
+            <div class="technical-mark technical-mark-two">
+                2026
+            </div>
+
+
+            <!-- -------------------------------------------------
+                 IDENTITY PANEL
+            -------------------------------------------------- -->
+
+            <div class="identity-panel">
+
+                <div class="identity-label">
+                    DIGITAL IDENTITY
+                </div>
+
+                <h1 class="person-name">
+                    YOGYREMA
+                    <span>SETYANTO</span>
+                </h1>
+
+                <p class="person-role">
+                    GEOSPATIAL RESEARCHER
+                </p>
+
+
+                <div class="identity-divider"></div>
+
+
+                <div class="identity-meta">
+
+                    <div class="meta-item">
+
+                        <span class="meta-label">
+                            ID NUMBER
+                        </span>
+
+                        <span class="meta-value">
+                            2026 · 001
+                        </span>
+
+                    </div>
+
+
+                    <div class="meta-item">
+
+                        <span class="meta-label">
+                            STATUS
+                        </span>
+
+                        <span class="meta-value active">
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- -------------------------------------------------
+                 BOTTOM BAR
+            -------------------------------------------------- -->
+
+            <div class="card-bottom">
+
+                <div class="bottom-code">
+                    3D / ID / 001
+                </div>
+
+                <div class="bottom-line"></div>
+
+                <div class="bottom-text">
+                    AUTHENTICATED IDENTITY
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PAGE FOOTER
+        ====================================================== -->
+
+        <div class="page-footer">
+
+            <span>
+                INTERACTIVE ID CARD
+            </span>
+
+            <span>
+                MOVE CURSOR TO EXPLORE
+            </span>
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+```
